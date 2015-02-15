@@ -23,6 +23,7 @@ static CGFloat const VENTouchLockCreatePasscodeViewControllerAnimationDuration =
 {
     [super viewDidLoad];
     self.passcodeView.title = [self.touchLock appearance].createPasscodeInitialLabelText;
+    self.passcodeView.frame = self.view.bounds;
 }
 
 - (void)enteredPasscode:(NSString *)passcode;
